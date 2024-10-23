@@ -14,7 +14,7 @@ Palette de Couleurs
 
 body {
     background-color: #f0f0f0; /* couleur fond de page */
-    background-image: url('images/fond_ecran.png');
+    background-image: url('fond_ecran.png');
     margin: 10px; /* permet de s'assurer que nos éléments prennent bien toute la largeur de la page */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
