@@ -14,22 +14,12 @@ Palette de Couleurs
 
 body {
     background-color: #f0f0f0; /* couleur fond de page */
+    background-attachment: fixed; /* image fixe quand on déroule la page */
     background-image: url('fond_ecran.png');
     margin: 10px; /* permet de s'assurer que nos éléments prennent bien toute la largeur de la page */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-
-.banniere {
-    padding: 40px; 
-    background-image: url('Images/banner.jpg');
-    background-size: cover;
-    border-radius: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top : 10px;
-    margin-bottom : 0px;
-}
 
 main{
     width : 70%;
@@ -58,7 +48,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #003366; /* Couleur du texte */
+    color: #3f1504;  /* Couleur du texte */
     text-decoration: none;
     font-size: 18px;
     padding: 8px 16px;
@@ -69,15 +59,60 @@ nav ul li a {
     border-radius: 4px;
     background-color: transparent; /* Fond transparent */
     transition: background-color 0.3s ease;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav ul li a:hover {
     background-color: white; /* Fond blanc au survol */
-    color: #003366; /* Texte bleu */
+    color: #3f1504; /* Texte bleu */
     border-radius: 4px;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
 }
 
 
+
+/* Style pour le bouton CV*/
+.cv {
+    padding: 10px 0;
+    margin-top: 0px;
+    margin-left: 20px;
+}
+
+.cv ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: relative;
+}
+
+.cv ul li {
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+}
+
+.cv ul li a {
+    color: #3f1504; /* Couleur du texte */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 3px 16px;
+    display: block;
+    width: 200px; /* Largeur du bouton principal */
+    text-align: center;
+    border: 2px solid rgb(238, 207, 181); /* Bordure blanche */
+    border-radius: 10px;
+    background-color: transparent; /* Fond transparent */
+    transition: background-color 0.3s ease;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cv ul li a:hover {
+    background-color: rgb(238, 207, 181); /* Fond blanc au survol */
+    color: #003366; /* Texte bleu */
+    border-radius: 10px;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+}
 
 
 
@@ -98,28 +133,45 @@ nav ul li a:hover {
 
 h1 {
     /* pour les sections 1 */
-    padding: 20px; 
+    /* padding: 20px;  */
     color: #806491;
     font-size: 2em;
-    margin: 40;
+    
 }
 
 h2 {
     /* pour les subsections 1.1 */
     color: #B9848C;
-    padding: 20px; 
+    /* padding: 20px;  */
     font-size: 1.5em;
+    margin: 0;
+}
+
+h3 {
+    font-style: bold;
+    /* padding: 20px;  */
+    font-size: 1em;
+    margin: 0;
+}
+
+.suptitle {
+    /* font-style: italic; */
+    /* padding: 20px;  */
+    font-size: 1em;
     margin: 0;
 }
 
 
 p {
     text-align: justify;
+    padding-top : 10px;
+    padding-bottom : 10px;
     padding-left: 20px; 
     padding-right: 20px; 
     font-size: 1em;
     text-align: justify;
     margin: auto;
+    color:black;
 }
 
 
@@ -134,7 +186,51 @@ p {
 }
 
 .column {
-    flex: 1;
+    flex: 2;
     margin: 0 0px; /* Ajoute un espace entre les colonnes */
-    text-align: center;
 }
+
+/* Pour une deuxième colonne plus petite */
+.column-small {
+    flex: 1; /* 1 part pour la deuxième colonne */
+}
+
+/* pour la photo de profil */
+
+.photo {
+    position: relative;
+    text-align: justify;
+}
+
+.circle {
+    position: absolute;
+    top: 20px;
+    right: 150px;
+    width: 200px; /* Ajuste la taille selon tes besoins */
+    height: 200px; /* Ajuste la taille selon tes besoins */
+    border-radius: 50%;
+    size: contain;
+    overflow: hidden; /*  permet de rogner à la taille de l'image */
+    border: 2px solid #fff; /* Bordure blanche */
+}
+.circle img {
+    object-fit: cover; /* Garde l'image centrée et couvrez tout le cercle */
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Footer */
+footer {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 4px;
+    font-size: 0.7em;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+    }
