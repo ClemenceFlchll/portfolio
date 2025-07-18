@@ -1,2 +1,1 @@
-# mon cv
-dans le dossier main --> déposer index et les autres pages + fichier CSS
+avec bouton "+" add files quand je modifie les html et css
