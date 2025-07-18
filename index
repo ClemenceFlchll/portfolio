@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NAME - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <div class="logo">Clémence Fléchelle</div>
+    <ul class="nav-links">
+      <li><a href="#who">Who I Am</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="who" class="section">
+    <div class="container">
+      <h1>Who I Am</h1>
+
+      <img class="profile-pic" src="profil_pic.jpg" alt="Photo de NAME">
+
+
+    
+<p>
+  I’m Clémence Fléchelle, currently a french student at ESPCI Paris - PSL and a right now Visiting Student at MIT. My passion lies in physics — especially in the fascinating world of fluid mechanics. I thrive on understanding how the invisible forces of nature shape our world, and I aim to contribute meaningfully through research and exploration.
+
+</p>
+
+
+
+    </div>
+  </section>
+
+<section id="projects" class="section alt">
+  <div class="container">
+    <h1>Projects</h1>
+    <div class="project-list-container">
+      <ul class="project-list"> 
+        <li> <a href="poster_pse.html"> Student project – Poster : Filets à Brouillard, 2024</a> <br> This project focused on fog nets, involving the design and construction of a fog machine, along with experimental measurements and numerical simulations. </li>
+        <li> <a href="https://example.com/pub2" target="_blank">Publication 2 – Title, Journal, Year</a></li>
+        <li> <a href="https://example.com/pub3" target="_blank">Publication 3 – Title, Journal, Year</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h1>Contact</h1>
+      <p><a href="https://www.linkedin.com/in/yourlinkedin" target="_blank">LinkedIn Profile</a></p>
+      <p><a href="cv.pdf" download>Download my CV</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; C FLECHELLE — All rights reserved.</p>
+  </footer>
+</body>
+</html>
