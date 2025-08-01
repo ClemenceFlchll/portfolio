@@ -100,7 +100,7 @@ h1 {
 }
 
 .project-list-container {
-  max-width: 66.66%; /* 2/3 largeur */
+  max-width: 90%; /* 2/3 largeur */
   margin: 0 auto;    /* centre horizontalement */
   text-align: justify; /* justifie le texte à l'intérieur */
 }
@@ -153,8 +153,8 @@ body::before {
 
 
 .profile-pic {
-  width: 160px;
-  height: 160px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid var(--primary-blue);
@@ -173,4 +173,55 @@ body::before {
   clip-path: polygon(0 100%, 0 0, 100% 100%);
   opacity: 0.1;
   z-index: 0;
+}
+
+
+.centered-figure {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.centered-figure img {
+  width: 70%;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 10px;
+  display: block;
+  margin: 1rem auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.centered-figure figcaption {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+.image-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 2%;
+  flex-wrap: wrap;
+  margin: 2rem auto;
+  max-width: 900px;
+}
+
+.image-row figure {
+  flex: 1 1 48%;
+  text-align: center;
+  margin: 0;
+}
+
+.image-row img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.image-row figcaption {
+  font-size: 0.9rem;
+  color: #555;
 }
