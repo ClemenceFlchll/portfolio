@@ -241,3 +241,22 @@ body::before {
   aspect-ratio: 16 / 9;
   border-radius: 12px;
 }
+
+.writing-content {
+  text-align: justify;
+  display: flex;
+  align-items:  center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.writing-img {
+  width: 220px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.writing-content p {
+  flex: 1;
+}
